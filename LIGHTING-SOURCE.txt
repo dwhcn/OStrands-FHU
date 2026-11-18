@@ -1,0 +1,8 @@
+OStrands 0.8.0.2 lighting-compensation sliders
+Based on https://gitlab.com/Keevan2374/ostrands at e3dcdff2f26e5f74dff304aa9cebea9183861b83.
+OStrands by LeonVanWinkle (Saint), with contributions by Keevan2374 and crajjjj.
+This modified build adds separately saved lighting compensation for strands and fluid.
+The corresponding project source is included under docs.
+Follow the included source's build.cmd with a current vcpkg and CommonLibSSE-NG v12.1.0.
+The modified meshes can be regenerated with tools/make_strand.py and tools/make_fluid.py.
+The project is distributed under GPL-3.0. See LICENSE in the source archive.

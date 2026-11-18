@@ -1,0 +1,28 @@
+OStrands by LeonVanWinkle (Saint), with contributions from crajjjj.
+
+This is a modified version of OStrands 0.8.0, released as 0.8.0.2. It is
+distributed under the GNU General Public License version 3; see
+OStrands-LICENSE.txt.
+
+Modifications:
+- 0.8.0.1, by Keevan2374, 2026-10-23:
+  - Creatures in SexLab scenes: strands, auto-pairing, collision and semen
+    follow each creature's own penis bones, chosen per skeleton from
+    [CreatureRigs] in OStrands.ini ([Creatures] Enabled toggles it).
+  - Built-in rigs for BakaFactory ABC creature skeletons, based on the ABC
+    overrides that ship with PPA - Penetration Physics.
+  - Arousal precum for creatures.
+- 0.8.0.2, by crajjjj, 2026-10-24:
+  - A creature only has a penis while it wears an erect mesh.
+  - Creatures without a matching rig get their penis bones from the erect
+    mesh they wear.
+  - Creatures are kept in OStim scenes too.
+  - A rig shaft radius of 0 measures the shaft from the worn mesh.
+
+Source code: https://github.com/dwhcn/OStrands-FHU
+Upstream OStrands: https://gitlab.com/Keevan2374/ostrands
+
+This build also includes the Chinese settings menu and FHU equip-event integration.
+Adds a separate Fill Her Up release settings page and fluid simulation parameters.
+Adds visual continuity to airborne fluid runs and read-only, storage-driven FHU seepage.
+Adds an optional continuous stream and ground pooling, inspired by the documented Milk Addition behavior, and individual FHU opening toggles.

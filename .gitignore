@@ -1,0 +1,6 @@
+build/
+extern/CommonLibSSE-NG/
+.vs/
+CMakeUserPresets.json
+dist/
+build.log
