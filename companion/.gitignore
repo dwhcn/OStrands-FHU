@@ -1,0 +1,6 @@
+build/
+dist/
+extern/CommonLibSSE-NG/
+.vs/
+CMakeUserPresets.json
+__pycache__/

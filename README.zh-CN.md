@@ -1,3 +1,19 @@
+## FHU Companion
+
+[English](README.md) | **简体中文**
+
+当前 FHU Companion 的源码在 [`companion/`](companion/)。可从这套源码构建
+简体中文和英文的 `FHUCompanion.dll`。两个语言版本都带有默认关闭的
+「无存量也渗出」开关。Companion 可以和普通 OStrands 插件一起使用。
+
+- [构建说明](companion/BUILD.txt)
+- [中英双语更新日志](companion/CHANGELOG.txt)
+- [Nexus Mods 下载页](https://www.nexusmods.com/skyrimspecialedition/mods/199648?tab=files)
+
+下方是早期集成版的说明。构建当前 Companion 时请进入 `companion/` 目录。
+
+---
+
 ## OStrands 与 Fill Her Up 集成
 
 [English](README.md) | **简体中文**

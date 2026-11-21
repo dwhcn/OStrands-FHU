@@ -1,0 +1,27 @@
+FHU Companion 0.8.0.2 source snapshot
+
+Build with Visual Studio 2022's x64 C++ tools, CMake 3.25+, Ninja and vcpkg.
+Set VCPKG_ROOT to the vcpkg installation. From this source folder, obtain
+the CommonLibSSE-NG revision used by the release:
+
+git clone https://github.com/alandtse/CommonLibSSE-NG.git extern/CommonLibSSE-NG
+git -C extern/CommonLibSSE-NG checkout 8ffc2b74af015f837de53cc02b0cb470a15678e4
+git -C extern/CommonLibSSE-NG submodule update --init --recursive
+
+Configure and build from an x64 Native Tools command prompt:
+
+cmake --preset release -B build/cn -DFHU_ENGLISH_MENU=OFF
+cmake --build build/cn --target FHUCompanion
+cmake --preset release -B build/en -DFHU_ENGLISH_MENU=ON
+cmake --build build/en --target FHUCompanion
+
+Each FHUCompanion.dll goes in SKSE/Plugins. The same DLL is used for the
+main and optional-light downloads of its language. The optional download
+also includes FHULightOriginal.ini and the dedicated lit meshes.
+
+To generate those meshes from the original OStrands 0.8.0 models, run:
+
+python tools/make-light-addon.py <original meshes/OStrands> <output meshes/FHULightOriginal>
+
+Preserve the file structure in the distributed lighting package. Original
+OStrands textures remain a runtime dependency.

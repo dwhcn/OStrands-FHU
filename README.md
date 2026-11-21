@@ -1,3 +1,22 @@
+## FHU Companion
+
+**English** | [简体中文](README.zh-CN.md)
+
+The current FHU Companion source is in [`companion/`](companion/). It
+builds `FHUCompanion.dll` with either the English or Simplified Chinese
+menu. Both editions include the optional **Leak Without Stored Fluid**
+setting, which is off by default. The regular OStrands plugin can run
+alongside Companion.
+
+- [Build instructions](companion/BUILD.txt)
+- [Bilingual changelog](companion/CHANGELOG.txt)
+- [Nexus Mods download page](https://www.nexusmods.com/skyrimspecialedition/mods/199648?tab=files)
+
+The section below documents the earlier integrated edition. Use the
+`companion/` directory when building the current Companion.
+
+---
+
 ## OStrands with Fill Her Up integration
 
 **English** | [简体中文](README.zh-CN.md)

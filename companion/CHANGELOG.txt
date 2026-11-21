@@ -1,0 +1,19 @@
+﻿FHU Companion 更新日志
+中文版
+
+• 将 FHU 集成拆成独立的 FHUCompanion.dll。普通 OStrands 可以继续使用原版插件，Companion 的设置单独保存到 FHUCompanion_User.ini。
+• 恢复旧版 FHU 的悬垂细丝。保留主动排出、自然渗出、衣物遮挡和装备例外。圆滴与积液可通过「显示圆形液滴」开关控制。
+• 改进 FHU 圆滴的下落与碰撞。圆滴朝下生成，接触移动的身体表面时减少被横向甩开的情况。圆滴仍可在地面形成积液。
+• 新增「无存量也渗出」，默认关闭。开启后，即使 FHU 未检测到存量，或游戏未安装 FHU，也可以在场景外按选定部位和速度自然渗出。FHU 主动排出仍需要 FHU。
+• 提供独立的 FHU Light 补光组件。它可为 FHU 的悬垂细丝、圆滴和积液调节材质亮度。
+• Companion 和 FHU Light 均提供简体中文及英文版本。
+
+FHU Companion Update
+English
+
+• FHU integration now runs through a separate FHUCompanion.dll. The regular OStrands plugin can run alongside it. Companion settings are saved separately in FHUCompanion_User.ini.
+• Restored the original FHU hanging strands. Active release, passive leakage, clothing checks and equipment exceptions remain available. Use Show Round Drops to toggle droplets and puddles.
+• Improved the fall and collision behavior of FHU droplets. Droplets spawn downward and are less likely to be flung sideways by moving body surfaces. They can still pool on the ground.
+• Added Leak Without Stored Fluid, off by default. Enable it to allow passive leakage outside scenes at the selected openings and rate when FHU reports no stored fluid or is absent. FHU is still required for its active-release animations.
+• Added an optional FHU Light component with adjustable material brightness for FHU hanging strands, droplets and puddles.
+• FHU Companion and FHU Light are available in Simplified Chinese and English.
