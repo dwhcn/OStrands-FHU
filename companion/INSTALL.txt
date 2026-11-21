@@ -1,0 +1,51 @@
+FHU Companion 安装与升级
+简体中文
+
+依赖
+• 使用与 Skyrim 运行版本匹配的 SKSE 和 Address Library。
+• 保留 OStrands 0.8.0 的模型和贴图。Companion 可以和普通 OStrands 的 0_OStrands.dll 一起运行，也支持只安装其模型和贴图。
+• Fill Her Up 提供主动排出动作和存量检测。无 FHU 的自然渗出用法见下文。
+• SKSE Menu Framework 用于游戏内设置。也可以在退出游戏后编辑配置文件。
+
+MO2 安装顺序
+1. 启用一种语言的 FHU Companion 本体。从旧 FHU 集成升级时，先停用会覆盖 0_OStrands.dll 的旧 FHU 替换包。
+2. 如需补光，启用同语言的 FHU Light，将它放在 Companion 下方。Light 只覆盖同语言 Companion 的 FHUCompanion.dll，并提供补光模型和启用文件。保持旧 FHU Light 关闭。
+3. 用 SKSE 启动。设置入口为 FHU x OStrands → Fill Her Up 排出。启用补光组件后，这里会显示 FHU 照明补偿滑条。
+4. Companion 会依次读取 OStrands.ini、OStrands_User.ini 和 FHUCompanion_User.ini。它会把自己的改动保存到 Data/SKSE/Plugins/FHUCompanion_User.ini，最后读取的同名设置优先。
+
+无 FHU 的自然渗出
+在「自然渗出」下打开「无存量也渗出」，启用想要的部位，并将自然渗出速度设为大于 0。这个开关默认关闭，只用于场景外的自然渗出。手动配置时，在 FHUCompanion_User.ini 的 [FillHerUp] 段设置 SeepWithoutStorage = true。
+
+排查加载
+• MO2 的 Data 页应能看到 SKSE/Plugins/FHUCompanion.dll。启用新补光时，同一路径应由对应语言的 FHU Light 提供。
+• 如果游戏提示检测到旧版 SKSE/Plugins/OStrands.dll，停用提供该文件的旧版 Mod 后重启。这条提示针对没有 0_ 前缀的旧 DLL。
+• 实机检查覆盖 Skyrim SE 1.6.640。完全移除 FHU 的独立模式通过了本地代码测试，尚未在该配置中实测。
+
+FHU Companion Installation and Upgrade
+English
+
+Requirements
+• Use SKSE and Address Library builds that match your Skyrim runtime.
+• Keep the OStrands 0.8.0 meshes and textures. Companion can run with the regular 0_OStrands.dll or with the OStrands assets alone.
+• Fill Her Up provides active-release animations and storage data. See the passive leakage section below for use without FHU.
+• SKSE Menu Framework provides in-game settings. You can also edit the configuration file with the game closed.
+
+Installation order in MO2
+1. Enable one language of FHU Companion. When upgrading, disable older FHU integration packages that replace 0_OStrands.dll.
+2. For lighting, enable the matching language of FHU Light below Companion. Light overrides the matching FHUCompanion.dll and supplies its own lighting meshes and marker file. Keep earlier FHU Light packages disabled.
+3. Start the game through SKSE. Open FHU x OStrands → Fill Her Up Release. FHU Lighting Boost appears when the lighting add-on is enabled.
+4. Companion reads OStrands.ini, OStrands_User.ini, and FHUCompanion_User.ini in that order. It saves its changes to Data/SKSE/Plugins/FHUCompanion_User.ini. If a setting appears in multiple files, the last value read takes precedence.
+
+Passive leakage without FHU
+Under Passive Leakage, enable Leak Without Stored Fluid, choose the desired openings, and set Passive Leak Rate above 0. This switch is off by default and applies to passive leakage outside scenes. For manual configuration, set SeepWithoutStorage = true under [FillHerUp] in FHUCompanion_User.ini.
+
+Load checks
+• In MO2's Data tab, look for SKSE/Plugins/FHUCompanion.dll. With the lighting add-on enabled, the matching language of FHU Light should supply that file.
+• If the game reports an old SKSE/Plugins/OStrands.dll, disable the mod supplying that file and restart. This warning applies to the older DLL name without the 0_ prefix.
+• In-game checks covered Skyrim SE 1.6.640. The no-FHU path passed local code tests. In-game testing with FHU fully removed is pending.
+
+依赖链接 / Dependency links
+SKSE: https://skse.silverlock.org/
+Address Library: https://www.nexusmods.com/skyrimspecialedition/mods/32444
+OStrands: https://www.nexusmods.com/skyrimspecialedition/mods/195115
+SKSE Menu Framework: https://www.nexusmods.com/skyrimspecialedition/mods/120352

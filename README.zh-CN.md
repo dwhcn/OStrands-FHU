@@ -6,6 +6,7 @@
 简体中文和英文的 `FHUCompanion.dll`。两个语言版本都带有默认关闭的
 「无存量也渗出」开关。Companion 可以和普通 OStrands 插件一起使用。
 
+- [安装、依赖和升级说明](companion/INSTALL.txt)
 - [构建说明](companion/BUILD.txt)
 - [中英双语更新日志](companion/CHANGELOG.txt)
 - [Nexus Mods 下载页](https://www.nexusmods.com/skyrimspecialedition/mods/199648?tab=files)
@@ -14,7 +15,7 @@
 
 ---
 
-## OStrands 与 Fill Her Up 集成
+## 旧版 OStrands 与 Fill Her Up 集成
 
 [English](README.md) | **简体中文**
 
